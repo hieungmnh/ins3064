@@ -5,22 +5,16 @@
         <title></title>
 </head>
 <body>
+    <h1>This is my first PHP file</h1>
+    <table border="1">
     <?php
-            $x = 10; 
-            $y = 11; 
-            echo "x == y: " . ($x == $y) . "<br/>"; 
-            echo "x != y: " . ($x != $y) . "<br/>"; 
-            echo "x < y: " . ($x < $y) . "<br/>"; 
-            echo "x > y " . ($x > $y) . "<br/>"; 
-            echo "x <= y: " . ($x <= $y) . "<br/>"; 
-            echo "x >= y: " . ($x >= $y) . "<br/>"; 
-
-            //https:localhost:8000/?x=5&y=3
-            $x = $_GET["x"]; 
-            $y = $_GET["y"]; 
-
-            echo "x + y = " . ($x + $y) . "<br>"; 
-            echo "x == y: " . ($x == $y) . "<br>";
+        for ($i = 0;$i < 5; $i++) {
+            echo "
+            <tr>
+                <td>$i</td>
+            </tr>
+            ";
+        }
 
     ?>
 </body>
